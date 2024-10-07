@@ -1,0 +1,243 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #3E4454 50%, #2d2d2e);
+    color: #fff;
+    column-gap: 12%;
+    padding: 0 5%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1.5s forwards ease-in-out;
+}
+
+/* Animation for Fade-In Effect */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Left Side */
+.leftSide > h2, 
+.leftSide > h4 {
+    color: #F65023;
+    font-weight: 600;
+}
+
+.leftSide > h1 {
+    font-size: 50px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s 0.7s forwards ease-in-out;
+}
+
+.leftSide h4 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 12px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s 0.9s forwards ease-in-out;
+}
+
+#span1 {
+    color: #25BE59;
+}
+#span2 {
+    color: #8067F0;
+}
+
+.leftSide p {
+    padding: 20px 0;
+    max-width: 40rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s 1.1s forwards ease-in-out;
+}
+
+.heroSection-button-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s 1.3s forwards ease-in-out;
+}
+
+.about-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #F65023;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    border: 2px solid #f75023;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.about-btn:hover {
+    background: transparent;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+
+.list img {
+    margin: 2px;
+    padding-left: 5px;
+    width: 30px;
+    border-radius: 30%;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+
+.list img:hover {
+    transform: scale(1.05);
+    background: #F65023;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+/* Right Side */
+.rightSide img {
+    position: relative;
+    width: 70%;
+    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1.5s 0.5s forwards ease-in-out;
+}
+
+/* Keep AnimationImages for laptop and larger screens */
+.AnimationImages {
+    position: absolute;
+    animation: scroll 3s infinite alternate;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.AnimationImages img {
+    width: 60px;
+}
+
+.image1 {
+    position: absolute;
+    bottom: 400px;
+    right: 15px;
+}
+
+.image2 {
+    position: absolute;
+    left: 15px;
+    bottom: 70px;
+}
+
+.image3 {
+    position: absolute;
+    bottom: 300px;
+    left: 170px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hero {
+        margin-top: 80px;
+        flex-direction: column; /* Change to column direction on smaller screens */
+        height: auto; /* Adjust height */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .rightSide {
+        order: 1; /* Move rightSide (image) to the top */
+        width: 100%; /* Ensure the image takes the full width */
+        text-align: center; /* Center the image */
+    }
+
+    .leftSide {
+        order: 2; /* Move leftSide (introduction) below the image */
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    .leftSide h1 {
+        font-size: 40px;
+    }
+    .leftSide h4 {
+        font-size: 18px;
+    }
+    .heroSection-button-list {
+        width: 80%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .rightSide img {
+        width: 90%;
+    }
+    .AnimationImages {
+        display: none; /* Hides the AnimationImages */
+    }
+}
+
+@media (max-width: 768px) {
+    .leftSide h1 {
+        font-size: 32px;
+    }
+    .leftSide h4 {
+        font-size: 16px;
+    }
+    .heroSection-button-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftSide h1 {
+        font-size: 24px;
+    }
+    .leftSide h4 {
+        font-size: 14px;
+    }
+    .heroSection-button-list {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .about-btn {
+        width: 100%;
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+    .list img {
+        width: 25px; /* Responsive icon size */
+    }
+}
+
+/* Ensure that AnimationImages are visible on larger screens */
+@media (min-width: 1025px) {
+    .AnimationImages {
+        display: block; /* Ensures the AnimationImages are displayed */
+    }
+}

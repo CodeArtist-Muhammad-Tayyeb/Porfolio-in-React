@@ -1,0 +1,52 @@
+.PortfolioSection {
+  position: relative;
+  background: #2b2d33;
+  color: #fff;
+  padding: 20px;
+  z-index: 1;
+  height: auto;
+  padding: 100px 0;
+}
+.PortfolioSection ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.PortfolioSection ul li {
+  list-style: none;
+  margin: 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+.PortfolioSection ul li:hover {
+  color: #f75023;
+}
+.imagesArea {
+  padding-top: 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.imagesArea img {
+  border-radius: 12px;
+  filter: drop-shadow(0 0 0.75rem rgba(34, 33, 33, 0.8));
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.imagesArea img:hover{
+  transform: scale(1.05);
+}
+.PortfolioSection ul li.active {
+  color: #f75023; 
+  font-weight: 700; 
+}
+.EffectImagePorfolio{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

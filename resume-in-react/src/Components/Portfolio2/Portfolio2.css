@@ -1,0 +1,123 @@
+.Portfolio2Section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2B2D33;
+    padding-top: 50px;
+    color: #fff;
+}
+
+
+
+
+
+
+/* Left Side */
+.leftSidePortfolio2{
+    
+    width: 42%;
+}
+.leftSidePortfolio2 h2{
+    color: #F75023;
+    font-weight: 600;
+    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+}
+.leftSidePortfolio2 h1{
+    font-size: 37px;
+    font-weight: 600;
+    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+}
+.leftSidePortfolio2 p{
+    padding-top: 30px;
+    color: #AEAABC;
+    line-height: 2;
+    padding-bottom: 50px;
+    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+}
+
+
+
+.progressBar{
+    list-style: none;
+}
+#bar{
+    height: 8px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    margin-top: 12px;
+    position: relative;
+}
+/* Prograss bar-1 */
+.bar1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    color: #F75023;
+    font-weight: 600;
+}
+#bar-1{
+    position: absolute;
+    width: 85%;
+    height: 8px;
+    background: #F75023;
+}
+/* Prograss bar-2 */
+.bar2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3px;
+    color: #1CBE59;
+    font-weight: 600;
+}
+#bar-2{
+    position: absolute;
+    width: 95%;
+    height: 8px;
+    background: #1CBE59;
+}
+/* Prograss bar-3 */
+.bar3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 95px;
+    color: #8067F0;
+    font-weight: 600;
+}
+#bar-3{
+    position: absolute;
+    width: 75%;
+    height: 8px;
+    background: #8067F0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Right Side */
+.rightSidePortfolio2{
+    width: 40%;
+}
+.rightSidePortfolio2 img{
+    width: 100%;
+    /* filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33)); */
+}

@@ -1,0 +1,9 @@
+.ServicesSection{
+    background: #2B2D33;
+    width: 100%;
+    position: relative;
+}
+.imageOfServices{
+    position: absolute;
+    width: 500px;
+}

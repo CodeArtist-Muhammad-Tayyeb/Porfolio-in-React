@@ -1,0 +1,130 @@
+nav {
+    width: 100%;
+    background: #3E4454;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo {
+    width: 110px;
+}
+
+/* Navbar List */
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 16px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+nav ul li:hover {
+    color: #F75023;
+}
+
+/* Navbar Button */
+.NavBar-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffff;
+    background: transparent;
+    border: 2px solid #f75023;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.NavBar-btn:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background-color: #f75023;
+    left: -5px;
+    right: -5px;
+    bottom: -2px;
+    height: 0;
+    transition: all 0.3s ease;
+}
+
+.NavBar-btn:hover:before {
+    height: 115%;
+    color: #fff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav {
+        background: #3E4454; /* Set solid background color for mobile and tablet */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background-color: #3E4454; /* Change background color for dropdown menu */
+        padding: 10px 0;
+        transition: all 0.3s ease;
+    }
+
+    /* Show the nav when active */
+    .nav-active {
+        left: 0;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .NavBar-btn {
+        display: none; /* Hide the button in mobile view */
+    }
+}
+
+/* Mobile Icon Hidden for Larger Screens */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-active ul {
+        display: flex;
+    }
+}

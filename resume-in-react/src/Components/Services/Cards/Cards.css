@@ -1,0 +1,34 @@
+.card {
+    width: 533px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    background: #4B4F5C;
+    color: #fff;
+    border-radius: 12px;
+    filter: drop-shadow(0 0 0.75rem rgba(34, 33, 33, 0.8));
+    padding: 70px; 
+    margin: 10px;
+    transition: all .5s ease;
+}
+.card:hover{
+    transform: scale(1.01);
+    background: #3a3d46;
+}
+.CardServices h2{
+    color: #fff;
+    font-weight: 600;
+    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+}
+.CardServices p{
+    padding-top: 16px;
+    color: #AEAABC;
+    line-height: 2;
+    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+}
+.CardServices h3{
+    font-weight: 500;
+}
+.CardServices h3 span{
+    color: #F75023;
+}
