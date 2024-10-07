@@ -1,16 +1,19 @@
+/* Portfolio Section */
 .PortfolioSection {
   position: relative;
   background: #2b2d33;
   color: #fff;
-  padding: 20px;
+  padding: 100px 20px; /* Adjust padding for smaller screens */
   z-index: 1;
   height: auto;
-  padding: 100px 0;
 }
+
+/* Navigation (Categories) */
 .PortfolioSection ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
 }
 .PortfolioSection ul li {
   list-style: none;
@@ -23,13 +26,21 @@
 .PortfolioSection ul li:hover {
   color: #f75023;
 }
+.PortfolioSection ul li.active {
+  color: #f75023;
+  font-weight: 700;
+}
+
+/* Images Area */
 .imagesArea {
   padding-top: 70px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
   gap: 30px;
+  transition: all 0.5s ease;
 }
+
 .imagesArea img {
   border-radius: 12px;
   filter: drop-shadow(0 0 0.75rem rgba(34, 33, 33, 0.8));
@@ -37,16 +48,56 @@
   height: auto;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.imagesArea img:hover{
+
+/* Hover Animation for Images */
+.imagesArea img:hover {
   transform: scale(1.05);
+  opacity: 0.9;
 }
-.PortfolioSection ul li.active {
-  color: #f75023; 
-  font-weight: 700; 
-}
-.EffectImagePorfolio{
+
+/* Background Effect Image */
+.EffectImagePorfolio {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
+  max-width: 40%;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1024px) {
+  .imagesArea {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+
+  }
+
+  .PortfolioSection ul li {
+    margin: 0 10px; /* Reduce space between categories */
+  }
+
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .imagesArea {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+
+  .PortfolioSection ul li {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .PortfolioSection ul li {
+    margin: 0 8px; /* Further reduce margin for small screens */
+  }
+
+  .imagesArea img {
+    border-radius: 10px; /* Adjust border radius for small screens */
+  }
+
+  .EffectImagePorfolio img {
+    max-width: 100%; /* Scale down effect image for smaller screens */
+  }
 }

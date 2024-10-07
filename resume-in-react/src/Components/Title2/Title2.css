@@ -1,31 +1,49 @@
-.title2{
+/* Title2 Container */
+.title2 {
     position: relative;
     color: #fff;
     background: #2B2D33;
+    padding: 50px 20px; /* Adjusted padding for better layout */
+    transition: all 0.5s ease;
 }
-.title2Image1 img{
+
+/* Image Styling */
+.title2Image1 img {
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 100%;
+    height: auto;
+    animation: fadeInRight 1s ease; /* Animation added */
 }
 
-
-.title2Details{
+/* Title2 Details */
+.title2Details {
     display: grid;
     place-items: center;
+    text-align: center;
+    animation: fadeInUp 1.2s ease; /* Adding fade-in animation */
 }
-.title2Details h2{
+
+/* h2 Styling */
+.title2Details h2 {
     padding-top: 100px;
     color: #F75023;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+    animation: fadeInUp 1.4s ease; /* Animation delay for smooth appearance */
 }
-.title2Details h1{
+
+/* h1 Styling */
+.title2Details h1 {
     font-size: 37px;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+    animation: fadeInUp 1.6s ease; /* Adding slight delay to h1 */
 }
-.title2Details p{
+
+/* Paragraph Styling */
+.title2Details p {
     text-align: center;
     width: 45%;
     padding-top: 20px;
@@ -33,5 +51,68 @@
     line-height: 2;
     padding-bottom: 50px;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+    animation: fadeInUp 1.8s ease; /* Fade-in with delay */
 }
 
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .title2Image1 img {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        animation: fadeInRight 1s ease; /* Ensure animation works responsively */
+    }
+
+    .title2Details h1 {
+        font-size: 32px;
+    }
+
+    .title2Details p {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title2Details h1 {
+        font-size: 28px;
+    }
+
+    .title2Details p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title2Details h1 {
+        font-size: 24px;
+    }
+
+    .title2Details p {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

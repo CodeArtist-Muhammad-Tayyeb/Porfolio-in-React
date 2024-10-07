@@ -8,33 +8,61 @@ const HeroSection2 = () => {
     background: "#2B2D33",
     color: "#ffff",
     display: 'flex',
-    alignItem: 'center',
+    alignItems: 'center',
     justifyContent: 'space-evenly',
-    height: '35rem',
+    flexWrap: 'wrap', // To handle responsiveness
+    height: 'auto',   // Adjust height for smaller screens
     paddingTop: '10rem',
+  };
+
+  const cardStyle = {
+    marginBottom: '2rem', // Adds spacing between cards for smaller screens
+    transition: 'transform 0.3s ease-in-out', // Animation effect
+  };
+
+  const handleHover = (event) => {
+    event.target.style.transform = 'scale(1.1)'; // Scale animation
+  };
+
+  const handleMouseLeave = (event) => {
+    event.target.style.transform = 'scale(1)';
   };
 
   return (
     <div style={heroSection2} className="container">
-      <CardsType
-        image={c1}
-        Head="Pixel Perfect"
-        Description="Most common methods for designing websites that work 
-        well on desktop is responsive and adaptive design."
-      />
-      <CardsType
-        image={c2}
-        Head="High Quality"
-        Description="Most common methods for designing websites that work 
-        well on desktop is responsive and adaptive design."
-      />
-      <CardsType
-        image={c3}
-        Head="Awesome Idea"
-        Description="Most common methods for designing websites that work
-        well on desktop is responsive and adaptive design."
-      />
-      
+      <div
+        style={cardStyle}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+      >
+        <CardsType
+          image={c1}
+          Head="Pixel Perfect"
+          Description="Most common methods for designing websites that work well on desktop is responsive and adaptive design."
+        />
+      </div>
+      <div
+        style={cardStyle}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+      >
+        <CardsType
+          image={c2}
+          Head="High Quality"
+          Description="Most common methods for designing websites that work well on desktop is responsive and adaptive design."
+        />
+      </div>
+      <div
+        style={cardStyle}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+      >
+        <CardsType
+          image={c3}
+          Head="Awesome Idea"
+          Description="Most common methods for designing websites that work well on desktop is responsive and adaptive design."
+        />
+      </div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
-.Portfolio2Section{
+/* Portfolio2 Section */
+.Portfolio2Section {
     width: 100%;
     display: flex;
     align-items: center;
@@ -6,42 +7,48 @@
     background: #2B2D33;
     padding-top: 50px;
     color: #fff;
+    padding: 50px 20px;
+    transition: all 0.5s ease; /* Smooth transition */
 }
-
-
-
-
-
 
 /* Left Side */
-.leftSidePortfolio2{
-    
+.leftSidePortfolio2 {
     width: 42%;
+    transition: transform 0.5s ease; /* Smooth transition */
 }
-.leftSidePortfolio2 h2{
+
+.leftSidePortfolio2 h2 {
     color: #F75023;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+    animation: fadeInUp 1s ease; /* Fade-in animation */
 }
-.leftSidePortfolio2 h1{
+
+.leftSidePortfolio2 h1 {
     font-size: 37px;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+    margin-top: 15px;
+    animation: fadeInUp 1.2s ease; /* Fade-in animation with delay */
 }
-.leftSidePortfolio2 p{
+
+.leftSidePortfolio2 p {
     padding-top: 30px;
     color: #AEAABC;
     line-height: 2;
     padding-bottom: 50px;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+    animation: fadeInUp 1.4s ease; /* Fade-in animation with delay */
 }
 
-
-
-.progressBar{
+/* Progress Bars */
+.progressBar {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
-#bar{
+
+#bar {
     height: 8px;
     background: #fff;
     overflow: hidden;
@@ -49,75 +56,128 @@
     margin-bottom: 30px;
     margin-top: 12px;
     position: relative;
+    animation: fadeIn 1s ease; /* Fade-in animation */
 }
-/* Prograss bar-1 */
-.bar1{
+
+.bar1, .bar2, .bar3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 50px;
-    color: #F75023;
     font-weight: 600;
 }
-#bar-1{
+
+.bar1 span, .bar2 span, .bar3 span {
+    animation: fadeInUp 1.6s ease; /* Adding animation to percentage text */
+}
+
+#bar-1, #bar-2, #bar-3 {
     position: absolute;
-    width: 85%;
     height: 8px;
+    animation: fillBar 2s ease; /* Animated fill for progress bars */
+}
+
+#bar-1 {
+    width: 85%;
     background: #F75023;
 }
-/* Prograss bar-2 */
-.bar2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 3px;
-    color: #1CBE59;
-    font-weight: 600;
-}
-#bar-2{
-    position: absolute;
+
+#bar-2 {
     width: 95%;
-    height: 8px;
     background: #1CBE59;
 }
-/* Prograss bar-3 */
-.bar3{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 95px;
-    color: #8067F0;
-    font-weight: 600;
-}
-#bar-3{
-    position: absolute;
+
+#bar-3 {
     width: 75%;
-    height: 8px;
     background: #8067F0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Right Side */
-.rightSidePortfolio2{
+.rightSidePortfolio2 {
     width: 40%;
+    transition: transform 0.5s ease;
 }
-.rightSidePortfolio2 img{
+
+.rightSidePortfolio2 img {
     width: 100%;
-    /* filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33)); */
+    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+    transition: transform 0.5s ease; /* Smooth scaling on hover */
+}
+
+.rightSidePortfolio2 img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fillBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1024px) {
+    .Portfolio2Section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .leftSidePortfolio2, .rightSidePortfolio2 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .leftSidePortfolio2 h1 {
+        font-size: 30px;
+    }
+
+    .rightSidePortfolio2 img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .leftSidePortfolio2 h1 {
+        font-size: 28px;
+    }
+
+    .leftSidePortfolio2 p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .leftSidePortfolio2 h1 {
+        font-size: 24px;
+    }
+
+    .leftSidePortfolio2 p {
+        font-size: 12px;
+    }
+
+    .rightSidePortfolio2 img {
+        width: 100%;
+    }
 }

@@ -8,14 +8,7 @@ import php from "../../assets/PHP.png";
 const Hero = () => {
   return (
     <div className="hero container">
-      <div className="rightSide">
-        <img src={avator} alt="Avatar" />
-        <div className="AnimationImages">
-          <img src={php} alt="PHP Image 1" className="image1" />
-          <img src={php} alt="PHP Image 2" className="image2" />
-          <img src={php} alt="PHP Image 3" className="image3" />
-        </div>
-      </div>
+     
 
       <div className="leftSide">
         <h2>Hello, I'm</h2>
@@ -42,6 +35,15 @@ const Hero = () => {
               <img src={linkedin} alt="LinkedIn" />
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div className="rightSide">
+        <img src={avator} alt="Avatar" />
+        <div className="AnimationImages">
+          <img src={php} alt="PHP Image 1" className="image1" />
+          <img src={php} alt="PHP Image 2" className="image2" />
+          <img src={php} alt="PHP Image 3" className="image3" />
         </div>
       </div>
     </div>

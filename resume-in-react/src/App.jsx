@@ -14,7 +14,7 @@ const App = () => {
       <Navbar />
       <HeroSection1 />
       <HeroSection2 />
-      {/* <About />
+      <About />
       <Title1
         head2="Portfolio"
         head1="My Amazing Works"
@@ -32,7 +32,9 @@ const App = () => {
         head2="Testimonials"
         head1="What My Clients Say"
         para="Most common methods for designing websites that work well on desktop is responsive and adaptive design"
-      /> */}
+      />
+
+
 
     </>
   );

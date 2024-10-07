@@ -1,3 +1,4 @@
+/* Card Styles */
 .card {
     width: 533px;
     height: auto;
@@ -9,26 +10,77 @@
     filter: drop-shadow(0 0 0.75rem rgba(34, 33, 33, 0.8));
     padding: 70px; 
     margin: 10px;
-    transition: all .5s ease;
-}
-.card:hover{
-    transform: scale(1.01);
+    transition: transform 0.5s ease, background 0.5s ease; /* Smooth transitions */
+    animation: fadeIn 1.2s ease; /* Animation added */
+  }
+  
+  /* Hover Effect */
+  .card:hover {
+    transform: scale(1.05);
     background: #3a3d46;
-}
-.CardServices h2{
+  }
+  
+  /* Card Image */
+  .CardImage img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Card Text */
+  .CardServices h2 {
     color: #fff;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-}
-.CardServices p{
+  }
+  
+  .CardServices p {
     padding-top: 16px;
     color: #AEAABC;
     line-height: 2;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-}
-.CardServices h3{
+  }
+  
+  .CardServices h3 {
     font-weight: 500;
-}
-.CardServices h3 span{
+  }
+  
+  .CardServices h3 span {
     color: #F75023;
-}
+  }
+  
+  /* Animation for card on appearance */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .card {
+      width: 90%; /* Adjust width for medium screens */
+      padding: 50px; /* Adjust padding for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%; /* Full width for smaller screens */
+      padding: 40px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .card {
+      width: 100%; /* Full width on mobile */
+      padding: 30px; /* Smaller padding for mobile */
+      margin: 10px 0; /* Margin adjustment for mobile */
+    }
+  }
+  

@@ -1,12 +1,15 @@
 .aboutSection {
     width: 100%;
-    height: 110vh;
+    height: auto; /* Adjust height for responsiveness */
     padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #2B2D33;
     color: #fff;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Left About */
@@ -15,6 +18,9 @@
     position: relative;
     padding-left: 80px;
     padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #image1 {
     width: 90%;
@@ -26,7 +32,9 @@
     top: 0;
     z-index: 1;
 }
-.twoDivsAbout{
+
+/* Animations for floating effect */
+.twoDivsAbout {
     position: relative;
     animation: aboutAnimation 3s infinite alternate;
 }
@@ -41,7 +49,9 @@
         transform: translateY(0);
     }
 }
-.oneAbout{
+
+/* Responsive Layout Adjustments */
+.oneAbout, .twoAbout {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,75 +60,48 @@
     padding: 15px;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
     border-radius: 20px;
-    position: absolute;
-    bottom: 350px;
-    left: -60px;
     cursor: pointer;
     transition: all 0.5s ease;
+    margin-bottom: 15px;
 }
-.oneAbout:hover{
-    transform: scale(1.05);
+
+.oneAbout:hover, .twoAbout:hover {
+    transform: scale(1.05); /* Hover animation */
 }
-.oneAbout h1{
-    color: #1CBE59;
+
+.oneAbout h1, .twoAbout h1 {
     font-size: 55px;
     font-weight: 600;
 }
-.oneAbout p{
-    width: 80px;
+
+.oneAbout p, .twoAbout p {
     font-size: 18px;
     font-weight: 600;
 }
-.twoAbout{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #4B4F5C;
-    column-gap: 10px;
-    padding: 15px;
-    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-    border-radius: 20px;
-    position: absolute;
-    top: -160px;
-    right: 0;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-.twoAbout:hover{
-    transform: scale(1.05);
-}
-.twoAbout h1{
-    color: #6E50F0;
-    font-size: 55px;
-    font-weight: 600;
-}
-.twoAbout p{
-    width: 80px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-
-
 
 /* Right About */
 .AboutRightSide {
-    position: relative;
     width: 50%;
     padding-right: 9%;
     padding-left: 5%;
     padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .AboutRightSide h2 {
     color: #F75023;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
 }
+
 .AboutRightSide h1 {
     font-size: 37px;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
 }
+
 .AboutRightSide p {
     padding-top: 30px;
     color: #AEAABC;
@@ -126,6 +109,7 @@
     padding-bottom: 50px;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
 }
+
 .AboutRightSide button {
     font-size: 16px;
     font-weight: 600;
@@ -139,12 +123,50 @@
     cursor: pointer;
     box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
 }
+
 .AboutRightSide button:hover {
     background: transparent;
 }
+
 .AboutRightSide img {
     position: absolute;
     right: 0;
     bottom: -70px;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1024px) {
+    .aboutSection {
+        flex-direction: column; /* Stack sections on top of each other */
+    }
+
+    .AboutLeftSide, .AboutRightSide {
+        width: 100%; /* Full width for both sections */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .AboutRightSide img {
+        display: none; /* Hide image on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #image1 {
+        width: 100%; /* Full-width image for smaller screens */
+    }
+
+    .AboutRightSide h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .AboutRightSide p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .AboutRightSide button {
+        padding: 10px 20px;
+    }
 }
