@@ -1,0 +1,84 @@
+.ContactForm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2B2D33;
+
+}
+.leftSideOfContactForm{
+    max-width: 40%;
+}
+
+
+
+
+
+
+.rightSideOfContactForm{
+    display: grid;
+    
+    max-width: 60%;
+    gap: 20px;
+}
+.formsInputs{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.formsInputs input{
+    padding: 20px 40px;
+    color: #AEAABC;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid #AEAABC;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.formsInputs input:hover{
+    border: 2px solid #F75023;
+   
+}
+
+.forms-btn{
+    display: grid;
+    grid-template-columns: auto;
+}
+.forms-btn textarea{
+    padding: 20px 40px;
+    color: #AEAABC;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid #AEAABC;
+    outline: none;
+    transition: all 0.3s ease;
+    resize: none;
+}
+
+.forms-btn textarea:hover{
+    border: 2px solid #F75023;
+}
+
+
+.submit-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #F65023;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    border: 2px solid #f75023;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.submit-btn:hover {
+    background: transparent;
+}
+
+
+

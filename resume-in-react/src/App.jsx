@@ -7,6 +7,8 @@ import Title2 from "./Components/Title2/Title2";
 import Portfolio1 from "./Components/Portfolio1/Portfolio1";
 import Porfolio2 from "./Components/Portfolio2/Portfolio2";
 import Services from "./Components/Services/Services";
+import Footer from "./Components/Footer/Footer";
+import ContactForm from "./Components/ContactForm/ContactForm";
 
 const App = () => {
   return (
@@ -29,13 +31,13 @@ const App = () => {
       />
       <Services />
       <Title2
-        head2="Testimonials"
-        head1="What My Clients Say"
-        para="Most common methods for designing websites that work well on desktop is responsive and adaptive design"
+        head2="Contact Me"
+        head1="I Want To Hear From You"
+        para="Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday"
       />
+      <ContactForm/>
 
-
-
+      <Footer />
     </>
   );
 };

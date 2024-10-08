@@ -1,0 +1,40 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B9B5C9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #3F4453;
+}
+h3 {
+    font-weight: 200;
+}
+.footer > h3 > a {
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.footer > h3 > a:hover{
+    color: #F75023;
+}
+
+ul li a{
+    color: #B9B5C9;
+    transition: all 0.3s ease;
+}
+ul li a:hover{
+    color: #F75023;
+}
+
+
+
+.ContactFormList{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    list-style: none;
+    background: #2B2D33;
+}
+.ContactFormList img{
+    width: 40px;
+}

@@ -50,7 +50,6 @@ const Portfolio = () => {
         })}
       </div>
 
-
       <div className="EffectImagePorfolio">
         <img src={EffectImagePortfilio} alt="" />
       </div>
