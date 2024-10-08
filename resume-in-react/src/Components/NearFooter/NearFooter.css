@@ -1,0 +1,58 @@
+/* Footer Container Styling */
+.ContactFormList {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust gap for better spacing */
+    color: #D5D5D6;
+    list-style: none;
+    background: #2B2D33;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Style for list items */
+.ContactFormList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em; /* Increase font size for better visibility */
+    transition: transform 0.3s ease-in-out; /* Add animation on hover */
+}
+
+.ContactFormList li:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Icon Styling */
+.ContactFormList img {
+    width: 40px;
+    transition: transform 0.3s ease-in-out; /* Add animation on hover */
+}
+
+.ContactFormList li:hover img {
+    transform: rotate(360deg); /* Rotate icons on hover */
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+    .ContactFormList {
+        flex-direction: row; /* Horizontal alignment for larger screens */
+    }
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 767px) {
+    .ContactFormList {
+        flex-direction: column; /* Vertical alignment for small screens */
+    }
+    
+    .ContactFormList img {
+        width: 30px; /* Smaller icons for mobile */
+    }
+
+    .ContactFormList li {
+        font-size: 1em; /* Adjust font size for mobile */
+    }
+}
