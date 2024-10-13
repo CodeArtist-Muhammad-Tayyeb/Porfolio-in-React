@@ -1,13 +1,13 @@
 .aboutSection {
     width: 100%;
-    height: auto; /* Adjust height for responsiveness */
+    height: auto;
     padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #2B2D33;
     color: #fff;
-    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -53,6 +53,7 @@
 /* Responsive Layout Adjustments */
 .oneAbout, .twoAbout {
     display: flex;
+    width: 250px;
     align-items: center;
     justify-content: space-between;
     background: #4B4F5C;
@@ -64,9 +65,14 @@
     transition: all 0.5s ease;
     margin-bottom: 15px;
 }
+.twoAbout{
+    position: relative;
+    left: 300px;
+    bottom: 300px;
+}
 
 .oneAbout:hover, .twoAbout:hover {
-    transform: scale(1.05); /* Hover animation */
+    transform: scale(1.05);
 }
 
 .oneAbout h1, .twoAbout h1 {
@@ -138,27 +144,31 @@
 /* Responsive Media Queries */
 @media screen and (max-width: 1024px) {
     .aboutSection {
-        flex-direction: column; /* Stack sections on top of each other */
+        flex-direction: column;
     }
 
     .AboutLeftSide, .AboutRightSide {
-        width: 100%; /* Full width for both sections */
+        width: 100%; 
         padding-left: 20px;
         padding-right: 20px;
     }
 
     .AboutRightSide img {
-        display: none; /* Hide image on smaller screens */
+        display: none;
+    }
+    .twoAbout{
+        left: 0;
+        bottom: 0;
     }
 }
 
 @media screen and (max-width: 768px) {
     #image1 {
-        width: 100%; /* Full-width image for smaller screens */
+        width: 100%; 
     }
 
     .AboutRightSide h1 {
-        font-size: 28px; /* Adjust font size for smaller screens */
+        font-size: 28px; 
     }
 
     .AboutRightSide p {
@@ -168,5 +178,9 @@
 
     .AboutRightSide button {
         padding: 10px 20px;
+    }
+    .twoAbout{
+        left: 0;
+        bottom: 0;
     }
 }

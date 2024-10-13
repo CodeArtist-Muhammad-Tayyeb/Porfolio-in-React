@@ -13,10 +13,9 @@
 /* Add hover effect */
 .heroSection2:hover {
     box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.178);
-    transform: translateY(-10px); /* Simple animation for hover */
+    transform: translateY(-10px); 
 }
 
-/* Head and paragraph styling */
 .heroSection2 h2 {
     margin-top: 20px;
 }
@@ -28,8 +27,8 @@
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
     .heroSection2 {
-        width: 100%;  /* Full width on smaller screens */
-        margin-bottom: 20px;  /* Add margin to create space between cards */
+        width: 100%;  
+        margin-bottom: 20px;  
     }
 }
 

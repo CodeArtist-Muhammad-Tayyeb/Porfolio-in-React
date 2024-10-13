@@ -5,7 +5,7 @@
     justify-content: space-between;
     color: #9997AA;
     padding: 50px 0;
-    background-color: #2B2D33; /* Background for footer */
+    background-color: #2B2D33; 
 }
 
 .custom-footer p {
@@ -18,7 +18,7 @@
 }
 
 .custom-footer p a:hover {
-    color: #fff; /* Hover effect for link */
+    color: #fff; 
 }
 
 /* Footer List Styling */

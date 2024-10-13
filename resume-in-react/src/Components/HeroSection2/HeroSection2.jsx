@@ -10,18 +10,18 @@ const HeroSection2 = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-evenly',
-    flexWrap: 'wrap', // To handle responsiveness
-    height: 'auto',   // Adjust height for smaller screens
+    flexWrap: 'wrap', 
+    height: 'auto',   
     paddingTop: '10rem',
   };
 
   const cardStyle = {
-    marginBottom: '2rem', // Adds spacing between cards for smaller screens
-    transition: 'transform 0.3s ease-in-out', // Animation effect
+    marginBottom: '2rem', 
+    transition: 'transform 0.3s ease-in-out', 
   };
 
   const handleHover = (event) => {
-    event.target.style.transform = 'scale(1.1)'; // Scale animation
+    event.target.style.transform = 'scale(1.1)'; 
   };
 
   const handleMouseLeave = (event) => {

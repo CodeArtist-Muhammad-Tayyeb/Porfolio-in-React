@@ -1,4 +1,3 @@
-/* Portfolio2 Section */
 .Portfolio2Section {
     width: 100%;
     display: flex;
@@ -8,20 +7,20 @@
     padding-top: 50px;
     color: #fff;
     padding: 50px 20px;
-    transition: all 0.5s ease; /* Smooth transition */
+    transition: all 0.5s ease; 
 }
 
 /* Left Side */
 .leftSidePortfolio2 {
     width: 42%;
-    transition: transform 0.5s ease; /* Smooth transition */
+    transition: transform 0.5s ease; 
 }
 
 .leftSidePortfolio2 h2 {
     color: #F75023;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-    animation: fadeInUp 1s ease; /* Fade-in animation */
+    animation: fadeInUp 1s ease;
 }
 
 .leftSidePortfolio2 h1 {
@@ -29,7 +28,7 @@
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
     margin-top: 15px;
-    animation: fadeInUp 1.2s ease; /* Fade-in animation with delay */
+    animation: fadeInUp 1.2s ease; 
 }
 
 .leftSidePortfolio2 p {
@@ -38,10 +37,9 @@
     line-height: 2;
     padding-bottom: 50px;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-    animation: fadeInUp 1.4s ease; /* Fade-in animation with delay */
+    animation: fadeInUp 1.4s ease; 
 }
 
-/* Progress Bars */
 .progressBar {
     list-style: none;
     margin: 0;
@@ -56,7 +54,7 @@
     margin-bottom: 30px;
     margin-top: 12px;
     position: relative;
-    animation: fadeIn 1s ease; /* Fade-in animation */
+    animation: fadeIn 1s ease; 
 }
 
 .bar1, .bar2, .bar3 {
@@ -67,13 +65,13 @@
 }
 
 .bar1 span, .bar2 span, .bar3 span {
-    animation: fadeInUp 1.6s ease; /* Adding animation to percentage text */
+    animation: fadeInUp 1.6s ease; 
 }
 
 #bar-1, #bar-2, #bar-3 {
     position: absolute;
     height: 8px;
-    animation: fillBar 2s ease; /* Animated fill for progress bars */
+    animation: fillBar 2s ease; 
 }
 
 #bar-1 {
@@ -99,8 +97,7 @@
 
 .rightSidePortfolio2 img {
     width: 100%;
-    filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-    transition: transform 0.5s ease; /* Smooth scaling on hover */
+    transition: transform 0.5s ease; 
 }
 
 .rightSidePortfolio2 img:hover {

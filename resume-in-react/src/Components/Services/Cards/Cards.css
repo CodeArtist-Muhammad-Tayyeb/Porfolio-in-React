@@ -1,4 +1,3 @@
-/* Card Styles */
 .card {
     width: 533px;
     height: auto;
@@ -9,25 +8,21 @@
     border-radius: 12px;
     filter: drop-shadow(0 0 0.75rem rgba(34, 33, 33, 0.8));
     padding: 70px; 
-    margin: 10px;
-    transition: transform 0.5s ease, background 0.5s ease; /* Smooth transitions */
-    animation: fadeIn 1.2s ease; /* Animation added */
+    transition: transform 0.5s ease, background 0.5s ease;
+    animation: fadeIn 1.2s ease;
   }
   
-  /* Hover Effect */
   .card:hover {
     transform: scale(1.05);
     background: #3a3d46;
   }
   
-  /* Card Image */
   .CardImage img {
     max-width: 100%;
     border-radius: 8px;
     transition: transform 0.5s ease;
   }
   
-  /* Card Text */
   .CardServices h2 {
     color: #fff;
     font-weight: 600;
@@ -64,23 +59,23 @@
   /* Responsive Design */
   @media screen and (max-width: 1024px) {
     .card {
-      width: 90%; /* Adjust width for medium screens */
-      padding: 50px; /* Adjust padding for medium screens */
+      width: 90%;
+      padding: 50px; 
     }
   }
   
   @media screen and (max-width: 768px) {
     .card {
-      width: 100%; /* Full width for smaller screens */
-      padding: 40px; /* Adjust padding for smaller screens */
+      width: 100%; 
+      padding: 40px; 
     }
   }
   
   @media screen and (max-width: 576px) {
     .card {
-      width: 100%; /* Full width on mobile */
-      padding: 30px; /* Smaller padding for mobile */
-      margin: 10px 0; /* Margin adjustment for mobile */
+      width: 100%; 
+      padding: 30px; 
+      margin: 10px 0; 
     }
   }
   

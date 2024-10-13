@@ -167,20 +167,20 @@
 @media (max-width: 1024px) {
     .hero {
         margin-top: 80px;
-        flex-direction: column; /* Change to column direction on smaller screens */
-        height: auto; /* Adjust height */
-        padding: 20px; /* Adjust padding */
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px; 
     }
 
     .rightSide {
-        order: 1; /* Move rightSide (image) to the top */
-        width: 100%; /* Ensure the image takes the full width */
-        text-align: center; /* Center the image */
+        order: 1; 
+        width: 100%;
+        text-align: center; 
     }
 
     .leftSide {
-        order: 2; /* Move leftSide (introduction) below the image */
-        width: 100%; /* Ensure it takes full width */
+        order: 2; 
+        width: 100%; 
     }
 
     .leftSide h1 {
@@ -198,7 +198,7 @@
         width: 90%;
     }
     .AnimationImages {
-        display: none; /* Hides the AnimationImages */
+        display: none; 
     }
 }
 
@@ -228,16 +228,16 @@
     }
     .about-btn {
         width: 100%;
-        padding: 10px; /* Adjusted padding for smaller screens */
+        padding: 10px; 
     }
     .list img {
-        width: 25px; /* Responsive icon size */
+        width: 25px; 
     }
 }
 
 /* Ensure that AnimationImages are visible on larger screens */
 @media (min-width: 1025px) {
     .AnimationImages {
-        display: block; /* Ensures the AnimationImages are displayed */
+        display: block;
     }
 }

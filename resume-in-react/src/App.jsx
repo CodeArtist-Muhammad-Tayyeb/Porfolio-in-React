@@ -38,6 +38,7 @@ const App = () => {
       />
       <ContactForm/>
       <NearFooter/>
+      <hr />
       <Footer />
     </>
   );

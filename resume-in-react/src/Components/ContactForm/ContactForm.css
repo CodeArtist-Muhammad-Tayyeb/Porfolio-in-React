@@ -1,8 +1,7 @@
-/* Contact Form Container Styling */
 .contact-form-wrapper {
     width: 100%;
     display: flex;
-    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
     background: #2B2D33;
@@ -12,7 +11,7 @@
 /* Left Side Styling */
 .left-side-contact-form {
     max-width: 40%;
-    margin-bottom: 20px; /* Margin for smaller screens */
+    margin-bottom: 20px; 
 }
 
 .left-side-contact-form img {
@@ -21,7 +20,7 @@
 }
 
 .left-side-contact-form img:hover {
-    transform: scale(1.05); /* Animation on hover */
+    transform: scale(1.05); 
 }
 
 /* Right Side Form Styling */
@@ -101,7 +100,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .contact-form-wrapper {
-        flex-direction: column; /* Stack vertically on smaller screens */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -111,6 +110,6 @@
     }
 
     .form-inputs {
-        grid-template-columns: 1fr; /* One column on smaller screens */
+        grid-template-columns: 1fr; 
     }
 }

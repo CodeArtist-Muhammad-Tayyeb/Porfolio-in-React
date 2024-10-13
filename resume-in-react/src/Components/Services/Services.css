@@ -1,23 +1,19 @@
-/* Services Section */
 .ServicesSection {
     background: #2B2D33;
     width: 100%;
     position: relative;
-    padding: 60px 20px;
     overflow: hidden;
-    transition: all 0.5s ease; /* Smooth transitions */
+    transition: all 0.5s ease; 
   }
   
-  /* Services Image */
   .imageOfServices {
     position: absolute;
     top: 0;
     right: 0;
     width: 500px;
-    animation: fadeInRight 1.2s ease; /* Animation added */
+    animation: fadeInRight 1.2s ease; 
   }
   
-  /* Cards Container */
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -25,14 +21,14 @@
     gap: 20px;
     position: relative;
     z-index: 1;
-    animation: fadeInUp 1.5s ease; /* Animation for cards */
+    animation: fadeInUp 1.5s ease; 
   }
   
   /* Cards Responsiveness */
   @media screen and (max-width: 1024px) {
     .imageOfServices {
       width: 400px;
-      animation: fadeInRight 1s ease; /* Ensuring animation works responsively */
+      animation: fadeInRight 1s ease; 
     }
   
     .cards {

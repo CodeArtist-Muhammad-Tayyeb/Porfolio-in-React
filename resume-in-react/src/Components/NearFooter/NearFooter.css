@@ -1,10 +1,10 @@
 /* Footer Container Styling */
 .ContactFormList {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Adjust gap for better spacing */
+    gap: 20px; 
     color: #D5D5D6;
     list-style: none;
     background: #2B2D33;
@@ -17,42 +17,41 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.2em; /* Increase font size for better visibility */
-    transition: transform 0.3s ease-in-out; /* Add animation on hover */
+    font-size: 1.2em; 
+    transition: transform 0.3s ease-in-out; 
 }
 
 .ContactFormList li:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); 
 }
 
-/* Icon Styling */
 .ContactFormList img {
     width: 40px;
-    transition: transform 0.3s ease-in-out; /* Add animation on hover */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .ContactFormList li:hover img {
-    transform: rotate(360deg); /* Rotate icons on hover */
+    transform: rotate(360deg); 
 }
 
 /* Responsive Styles */
 @media screen and (min-width: 768px) {
     .ContactFormList {
-        flex-direction: row; /* Horizontal alignment for larger screens */
+        flex-direction: row;
     }
 }
 
 /* Mobile responsiveness */
 @media screen and (max-width: 767px) {
     .ContactFormList {
-        flex-direction: column; /* Vertical alignment for small screens */
+        flex-direction: column; 
     }
     
     .ContactFormList img {
-        width: 30px; /* Smaller icons for mobile */
+        width: 30px; 
     }
 
     .ContactFormList li {
-        font-size: 1em; /* Adjust font size for mobile */
+        font-size: 1em; 
     }
 }

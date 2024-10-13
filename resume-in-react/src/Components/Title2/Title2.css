@@ -1,48 +1,42 @@
-/* Title2 Container */
 .title2 {
     position: relative;
     color: #fff;
     background: #2B2D33;
-    padding: 50px 20px; /* Adjusted padding for better layout */
+    padding: 50px 20px; 
     transition: all 0.5s ease;
 }
 
-/* Image Styling */
 .title2Image1 img {
     position: absolute;
     top: 0;
     right: 0;
     max-width: 100%;
     height: auto;
-    animation: fadeInRight 1s ease; /* Animation added */
+    animation: fadeInRight 1s ease; 
 }
 
-/* Title2 Details */
 .title2Details {
     display: grid;
     place-items: center;
     text-align: center;
-    animation: fadeInUp 1.2s ease; /* Adding fade-in animation */
+    animation: fadeInUp 1.2s ease;
 }
 
-/* h2 Styling */
 .title2Details h2 {
     padding-top: 100px;
     color: #F75023;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-    animation: fadeInUp 1.4s ease; /* Animation delay for smooth appearance */
+    animation: fadeInUp 1.4s ease;
 }
 
-/* h1 Styling */
 .title2Details h1 {
     font-size: 37px;
     font-weight: 600;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-    animation: fadeInUp 1.6s ease; /* Adding slight delay to h1 */
+    animation: fadeInUp 1.6s ease; 
 }
 
-/* Paragraph Styling */
 .title2Details p {
     text-align: center;
     width: 45%;
@@ -51,7 +45,7 @@
     line-height: 2;
     padding-bottom: 50px;
     filter: drop-shadow(0 0 0.75rem rgb(34, 33, 33));
-    animation: fadeInUp 1.8s ease; /* Fade-in with delay */
+    animation: fadeInUp 1.8s ease; 
 }
 
 /* Responsive Adjustments */
@@ -61,7 +55,7 @@
         width: 80%;
         margin: 0 auto;
         display: block;
-        animation: fadeInRight 1s ease; /* Ensure animation works responsively */
+        animation: fadeInRight 1s ease; 
     }
 
     .title2Details h1 {
